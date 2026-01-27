@@ -1,0 +1,185 @@
+import { Phone, Mail, MapPin, Clock, ArrowRight } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import AnimatedSection from "@/components/AnimatedSection";
+
+const ContactSection = () => {
+  return (
+    <section id="contact" className="scroll-mt-16">
+      {/* Hero Section */}
+      <div className="py-16 md:py-24 bg-muted/30">
+        <div className="container">
+          <AnimatedSection animation="fade-up" className="max-w-4xl mx-auto text-center space-y-6">
+            <Badge variant="outline" className="px-4 py-2">
+              Get In Touch
+            </Badge>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
+              Let's Start a{" "}
+              <span className="text-primary">Conversation</span>
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Ready to transform your organization's human capital strategy?
+            </p>
+          </AnimatedSection>
+        </div>
+      </div>
+
+      {/* Quote & Contact */}
+      <div className="py-16 md:py-24">
+        <div className="container">
+          <div className="max-w-5xl mx-auto">
+            {/* Quote */}
+            <AnimatedSection animation="zoom-in" className="text-center mb-16">
+              <blockquote className="relative px-6 py-8 md:px-12 md:py-10 bg-primary/5 rounded-2xl border border-primary/20">
+                <span className="absolute -top-4 left-8 text-6xl text-primary/30 font-serif">"</span>
+                <p className="text-xl md:text-2xl italic text-foreground max-w-3xl mx-auto">
+                  Look forward for the meeting to freeze the interventions and the timelines.
+                </p>
+              </blockquote>
+            </AnimatedSection>
+
+            {/* Contact Cards */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* Phone */}
+              <AnimatedSection animation="fade-up" delay={100}>
+                <a
+                  href="tel:+919881093405"
+                  className="group p-8 rounded-2xl border border-border bg-card hover:border-primary/50 hover:shadow-lg transition-all duration-300 text-center block h-full"
+                >
+                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
+                    <Phone className="h-8 w-8 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-semibold mb-2">Call Me</h3>
+                  <p className="text-2xl font-bold text-primary mb-2">+91 98810 93405</p>
+                  <p className="text-sm text-muted-foreground">
+                    Available for calls during business hours
+                  </p>
+                  <div className="mt-4 flex items-center justify-center text-sm text-primary font-medium">
+                    <span>Tap to call</span>
+                    <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </a>
+              </AnimatedSection>
+
+              {/* Email */}
+              <AnimatedSection animation="fade-up" delay={200}>
+                <a
+                  href="mailto:27.anand@gmail.com"
+                  className="group p-8 rounded-2xl border border-border bg-card hover:border-primary/50 hover:shadow-lg transition-all duration-300 text-center block h-full"
+                >
+                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
+                    <Mail className="h-8 w-8 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-semibold mb-2">Email Me</h3>
+                  <p className="text-xl font-bold text-primary mb-2 break-all">27.anand@gmail.com</p>
+                  <p className="text-sm text-muted-foreground">
+                    I'll respond within 24-48 hours
+                  </p>
+                  <div className="mt-4 flex items-center justify-center text-sm text-primary font-medium">
+                    <span>Send email</span>
+                    <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </a>
+              </AnimatedSection>
+
+              {/* Location */}
+              <AnimatedSection animation="fade-up" delay={300} className="md:col-span-2 lg:col-span-1">
+                <div className="p-8 rounded-2xl border border-border bg-card text-center h-full">
+                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
+                    <MapPin className="h-8 w-8 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-semibold mb-2">Location</h3>
+                  <p className="text-xl font-bold text-primary mb-2">Pune, Maharashtra</p>
+                  <p className="text-sm text-muted-foreground">
+                    Available for in-person meetings and pan-India consulting
+                  </p>
+                </div>
+              </AnimatedSection>
+            </div>
+
+            {/* Availability Info */}
+            <AnimatedSection animation="fade-up" delay={400} className="mt-12">
+              <div className="p-6 md:p-8 rounded-2xl bg-muted/50 border border-border">
+                <div className="flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
+                  <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                    <Clock className="h-7 w-7 text-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-lg font-semibold mb-2">Availability</h3>
+                    <p className="text-muted-foreground">
+                      I'm available for consulting engagements across India. Whether you need strategic advisory, on-site interventions, or remote consulting, let's discuss how I can help transform your organization.
+                    </p>
+                  </div>
+                  <Button asChild size="lg" className="shrink-0">
+                    <a href="tel:+919881093405">
+                      <Phone className="mr-2 h-4 w-4" />
+                      Call Now
+                    </a>
+                  </Button>
+                </div>
+              </div>
+            </AnimatedSection>
+          </div>
+        </div>
+      </div>
+
+      {/* What to Expect */}
+      <div className="py-16 md:py-24 bg-muted/30">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <AnimatedSection animation="fade-up" className="text-center space-y-4 mb-12">
+              <h3 className="text-2xl md:text-3xl font-bold">What to Expect</h3>
+              <p className="text-muted-foreground">
+                When you reach out, here's how we'll work together
+              </p>
+            </AnimatedSection>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              <AnimatedSection animation="fade-up" delay={100} className="text-center">
+                <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center mx-auto mb-4 text-lg font-bold">
+                  1
+                </div>
+                <h4 className="font-semibold mb-2">Initial Discussion</h4>
+                <p className="text-sm text-muted-foreground">
+                  Understanding your organization's unique challenges
+                </p>
+              </AnimatedSection>
+
+              <AnimatedSection animation="fade-up" delay={200} className="text-center">
+                <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center mx-auto mb-4 text-lg font-bold">
+                  2
+                </div>
+                <h4 className="font-semibold mb-2">Needs Assessment</h4>
+                <p className="text-sm text-muted-foreground">
+                  Identifying the right interventions for your goals
+                </p>
+              </AnimatedSection>
+
+              <AnimatedSection animation="fade-up" delay={300} className="text-center">
+                <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center mx-auto mb-4 text-lg font-bold">
+                  3
+                </div>
+                <h4 className="font-semibold mb-2">Proposal</h4>
+                <p className="text-sm text-muted-foreground">
+                  Clear timeline and deliverables for the engagement
+                </p>
+              </AnimatedSection>
+
+              <AnimatedSection animation="fade-up" delay={400} className="text-center">
+                <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center mx-auto mb-4 text-lg font-bold">
+                  4
+                </div>
+                <h4 className="font-semibold mb-2">Execution</h4>
+                <p className="text-sm text-muted-foreground">
+                  Hands-on implementation and ongoing support
+                </p>
+              </AnimatedSection>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ContactSection;

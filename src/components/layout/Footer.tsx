@@ -1,16 +1,21 @@
-import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 const Footer = () => {
+  const scrollToSection = (sectionId: string) => {
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <footer className="bg-foreground text-background">
       <div className="container py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold">
-              Anand <span className="text-primary">Shaligram</span>
-            </h3>
+            <button onClick={() => scrollToSection("home")} className="text-left">
+              <h3 className="text-xl font-bold">
+                Anand <span className="text-primary">Shaligram</span>
+              </h3>
+            </button>
             <p className="text-background/70 text-sm leading-relaxed">
               Transforming employee potential into substantive performance and contributions to business success.
             </p>
@@ -22,21 +27,36 @@ const Footer = () => {
               Quick Links
             </h4>
             <nav className="flex flex-col space-y-2">
-              <Link to="/" className="text-sm text-background/70 hover:text-primary transition-colors">
+              <button 
+                onClick={() => scrollToSection("home")} 
+                className="text-sm text-background/70 hover:text-primary transition-colors text-left"
+              >
                 Home
-              </Link>
-              <Link to="/about" className="text-sm text-background/70 hover:text-primary transition-colors">
+              </button>
+              <button 
+                onClick={() => scrollToSection("about")} 
+                className="text-sm text-background/70 hover:text-primary transition-colors text-left"
+              >
                 About
-              </Link>
-              <Link to="/services" className="text-sm text-background/70 hover:text-primary transition-colors">
+              </button>
+              <button 
+                onClick={() => scrollToSection("services")} 
+                className="text-sm text-background/70 hover:text-primary transition-colors text-left"
+              >
                 Services
-              </Link>
-              <Link to="/success-stories" className="text-sm text-background/70 hover:text-primary transition-colors">
+              </button>
+              <button 
+                onClick={() => scrollToSection("success-stories")} 
+                className="text-sm text-background/70 hover:text-primary transition-colors text-left"
+              >
                 Success Stories
-              </Link>
-              <Link to="/contact" className="text-sm text-background/70 hover:text-primary transition-colors">
+              </button>
+              <button 
+                onClick={() => scrollToSection("contact")} 
+                className="text-sm text-background/70 hover:text-primary transition-colors text-left"
+              >
                 Contact
-              </Link>
+              </button>
             </nav>
           </div>
 
