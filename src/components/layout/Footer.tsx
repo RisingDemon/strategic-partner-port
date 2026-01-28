@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="space-y-4">
             <button onClick={() => scrollToSection("home")} className="text-left">
               <h3 className="text-xl font-bold">
-                Anand <span className="text-primary">Shaligram</span>
+               <span className="text-primary">Anand Shaligram</span>
               </h3>
             </button>
             <p className="text-background/70 text-sm leading-relaxed">

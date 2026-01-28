@@ -126,7 +126,7 @@ const HeroSection = () => {
                   <p className="text-sm text-muted-foreground mt-1">Industries Served</p>
                 </div>
                 <div className="text-center group">
-                  <p className="text-3xl md:text-4xl font-bold text-primary group-hover:scale-110 transition-transform duration-300 inline-block">50+</p>
+                  <p className="text-3xl md:text-4xl font-bold text-primary group-hover:scale-110 transition-transform duration-300 inline-block">20+</p>
                   <p className="text-sm text-muted-foreground mt-1">Organizations</p>
                 </div>
               </div>

@@ -223,7 +223,7 @@ const SuccessStoriesSection = () => {
       <div className="py-16 md:py-24 bg-foreground text-background">
         <div className="container">
           <AnimatedSection animation="zoom-in" className="max-w-3xl mx-auto text-center space-y-6">
-            <h3 className="text-2xl md:text-3xl font-bold">
+            <h3 className="text-2xl md:text-3xl font-bold text-background/70">
               Your Success Story Starts Here
             </h3>
             <p className="text-background/70">

@@ -36,7 +36,7 @@ const AboutSection = () => {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Professional Photo */}
-            <AnimatedSection animation="fade-right" className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-border order-2 lg:order-1 shadow-lg">
+            <AnimatedSection animation="fade-right" className="relative aspect-[5/5] rounded-2xl overflow-hidden border border-border order-2 lg:order-1 shadow-lg">
               <img 
                 src={profilePic} 
                 alt="Anand Shaligram - HR Consultant" 
@@ -159,7 +159,7 @@ const AboutSection = () => {
                 <p className="text-sm text-primary font-medium">Leadership</p>
                 <h4 className="font-semibold text-lg">Leadership Award 2021</h4>
                 <p className="text-muted-foreground text-sm mt-1">
-                  Recognized for exceptional contributions to organizational development and HR excellence.
+                  Professional Excellence in Industrial Relations & Human Resource Management.
                 </p>
               </div>
             </AnimatedSection>

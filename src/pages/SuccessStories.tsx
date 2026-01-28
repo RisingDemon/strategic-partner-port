@@ -219,7 +219,7 @@ const SuccessStories = () => {
       <section className="py-16 md:py-24 bg-foreground text-background">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center space-y-6">
-            <h2 className="text-2xl md:text-3xl font-bold">
+            <h2 className="text-2xl md:text-3xl font-bold text-background/70">
               Your Success Story Starts Here
             </h2>
             <p className="text-background/70">

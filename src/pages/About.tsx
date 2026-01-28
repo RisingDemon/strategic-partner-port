@@ -159,7 +159,7 @@ const About = () => {
                 <p className="text-sm text-primary font-medium">Leadership</p>
                 <h3 className="font-semibold text-lg">Leadership Award 2021</h3>
                 <p className="text-muted-foreground text-sm mt-1">
-                  Recognized for exceptional contributions to organizational development and HR excellence.
+                  Professional Excellence in Industrial Relations & Human Resource Management.
                 </p>
               </div>
             </div>
