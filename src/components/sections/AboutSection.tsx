@@ -1,6 +1,7 @@
-import { GraduationCap, Briefcase, Target, Users, Scale, Search } from "lucide-react";
+import { GraduationCap, Briefcase, Target, Scale, Search } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import AnimatedSection from "@/components/AnimatedSection";
+import profilePic from "@/assets/profile_pic.jpg";
 
 const skills = [
   { name: "Business Partnership", icon: Briefcase },
@@ -34,17 +35,13 @@ const AboutSection = () => {
       <div className="py-16 md:py-24">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Photo Placeholder */}
-            <AnimatedSection animation="fade-right" className="relative aspect-[4/5] bg-muted rounded-2xl overflow-hidden border border-border order-2 lg:order-1">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="w-32 h-32 mx-auto rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                    <Users className="w-16 h-16 text-primary/50" />
-                  </div>
-                  <p className="text-muted-foreground text-sm">Professional Photo</p>
-                  <p className="text-muted-foreground text-xs mt-1">(Upload your photo)</p>
-                </div>
-              </div>
+            {/* Professional Photo */}
+            <AnimatedSection animation="fade-right" className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-border order-2 lg:order-1 shadow-lg">
+              <img 
+                src={profilePic} 
+                alt="Anand Shaligram - HR Consultant" 
+                className="w-full h-full object-cover object-top"
+              />
               {/* Decorative element */}
               <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary/10 rounded-2xl -z-10" />
             </AnimatedSection>
