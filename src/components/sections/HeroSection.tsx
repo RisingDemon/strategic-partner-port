@@ -1,7 +1,10 @@
-import { ArrowRight, Award, Building2, Users } from "lucide-react";
+import { ArrowRight, Award, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import AnimatedSection from "@/components/AnimatedSection";
+import suzlonLogo from "@/assets/suzlon.webp";
+import welspunLogo from "@/assets/welspun.png";
+import mahatranscoLogo from "@/assets/mahatransco.png";
 
 const HeroSection = () => {
   const scrollToContact = () => {
@@ -88,25 +91,22 @@ const HeroSection = () => {
               </div>
             </AnimatedSection>
 
-            {/* Client Logos Placeholder */}
+            {/* Client Logos */}
             <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16 pt-8">
-              <AnimatedSection animation="fade-up" delay={100} className="flex flex-col items-center gap-2 opacity-70 hover:opacity-100 transition-all duration-300 hover:scale-105">
-                <div className="w-24 h-16 md:w-32 md:h-20 bg-muted rounded-lg flex items-center justify-center border border-border">
-                  <Building2 className="h-8 w-8 text-muted-foreground" />
+              <AnimatedSection animation="fade-up" delay={100} className="opacity-80 hover:opacity-100 transition-all duration-300 hover:scale-105">
+                <div className="w-32 h-16 md:w-40 md:h-20 bg-white rounded-lg flex items-center justify-center p-3 border border-border shadow-sm">
+                  <img src={suzlonLogo} alt="Suzlon" className="max-w-full max-h-full object-contain" />
                 </div>
-                <span className="text-sm font-medium text-muted-foreground">Suzlon</span>
               </AnimatedSection>
-              <AnimatedSection animation="fade-up" delay={200} className="flex flex-col items-center gap-2 opacity-70 hover:opacity-100 transition-all duration-300 hover:scale-105">
-                <div className="w-24 h-16 md:w-32 md:h-20 bg-muted rounded-lg flex items-center justify-center border border-border">
-                  <Building2 className="h-8 w-8 text-muted-foreground" />
+              <AnimatedSection animation="fade-up" delay={200} className="opacity-80 hover:opacity-100 transition-all duration-300 hover:scale-105">
+                <div className="w-32 h-16 md:w-40 md:h-20 bg-white rounded-lg flex items-center justify-center p-3 border border-border shadow-sm">
+                  <img src={welspunLogo} alt="Welspun" className="max-w-full max-h-full object-contain" />
                 </div>
-                <span className="text-sm font-medium text-muted-foreground">Welspun</span>
               </AnimatedSection>
-              <AnimatedSection animation="fade-up" delay={300} className="flex flex-col items-center gap-2 opacity-70 hover:opacity-100 transition-all duration-300 hover:scale-105">
-                <div className="w-24 h-16 md:w-32 md:h-20 bg-muted rounded-lg flex items-center justify-center border border-border">
-                  <Building2 className="h-8 w-8 text-muted-foreground" />
+              <AnimatedSection animation="fade-up" delay={300} className="opacity-80 hover:opacity-100 transition-all duration-300 hover:scale-105">
+                <div className="w-32 h-16 md:w-40 md:h-20 bg-white rounded-lg flex items-center justify-center p-3 border border-border shadow-sm">
+                  <img src={mahatranscoLogo} alt="Mahatransco" className="max-w-full max-h-full object-contain" />
                 </div>
-                <span className="text-sm font-medium text-muted-foreground">Mahatransco</span>
               </AnimatedSection>
             </div>
 
@@ -152,7 +152,7 @@ const HeroSection = () => {
             <AnimatedSection animation="fade-up" delay={100}>
               <div className="group p-6 md:p-8 rounded-xl border border-border bg-card hover:border-primary/50 hover:shadow-lg transition-all duration-500 h-full">
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
-                  <Building2 className="h-6 w-6 text-primary" />
+                  <Award className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Strategic</h3>
                 <p className="text-muted-foreground text-sm mb-4">
