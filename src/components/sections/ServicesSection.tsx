@@ -1,9 +1,8 @@
 import { Building2, Users, Heart, ArrowRight, Compass, Gauge, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import AnimatedSection from "@/components/AnimatedSection";
-
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 const ServicesSection = () => {
   const scrollToContact = () => {
     document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
@@ -96,125 +95,78 @@ const ServicesSection = () => {
             </p>
           </AnimatedSection>
 
-          <AnimatedSection animation="zoom-in" delay={200}>
-            <Tabs defaultValue="strategic" className="max-w-4xl mx-auto">
-              <TabsList className="grid w-full grid-cols-3 mb-8">
-                <TabsTrigger value="strategic" className="text-sm md:text-base">
+          <AnimatedSection animation="zoom-in" delay={200} className="max-w-5xl mx-auto space-y-8">
+           <Tabs>
+            <TabsList className="grid w-full grid-cols-3 mb-8">
+                <TabsTrigger className="text-sm md:text-base">
                   <Building2 className="h-4 w-4 mr-2 hidden sm:block" />
                   Strategic
                 </TabsTrigger>
-                <TabsTrigger value="talent" className="text-sm md:text-base">
+                <TabsTrigger className="text-sm md:text-base">
                   <Users className="h-4 w-4 mr-2 hidden sm:block" />
                   Talent
                 </TabsTrigger>
-                <TabsTrigger value="cultural" className="text-sm md:text-base">
+                <TabsTrigger className="text-sm md:text-base">
                   <Heart className="h-4 w-4 mr-2 hidden sm:block" />
                   Cultural
                 </TabsTrigger>
               </TabsList>
-
-              <TabsContent value="strategic" className="space-y-6">
-                <div className="p-6 md:p-8 rounded-2xl border border-border bg-card">
-                  <div className="flex items-start gap-4 mb-6">
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                      <Building2 className="h-6 w-6 text-primary" />
-                    </div>
-                    <div>
-                      <h4 className="text-xl font-bold mb-2">Strategic Interventions</h4>
-                      <p className="text-muted-foreground">
-                        Building the foundation for organizational success through strategic planning and diagnostics.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    <div className="p-4 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <h5 className="font-semibold mb-2">Vision-Mission-Value Drafting</h5>
-                      <p className="text-sm text-muted-foreground">
-                        Crafting compelling organizational narratives that align teams and drive purpose.
-                      </p>
-                    </div>
-                    <div className="p-4 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <h5 className="font-semibold mb-2">Organization Diagnostics</h5>
-                      <p className="text-sm text-muted-foreground">
-                        Comprehensive assessment of organizational health and improvement opportunities.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </TabsContent>
-
-              <TabsContent value="talent" className="space-y-6">
-                <div className="p-6 md:p-8 rounded-2xl border border-border bg-card">
-                  <div className="flex items-start gap-4 mb-6">
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                      <Users className="h-6 w-6 text-primary" />
-                    </div>
-                    <div>
-                      <h4 className="text-xl font-bold mb-2">Talent Interventions</h4>
-                      <p className="text-muted-foreground">
-                        Developing and optimizing your most valuable asset—your people.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <div className="p-4 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <h5 className="font-semibold mb-2">Competency Mapping</h5>
-                      <p className="text-sm text-muted-foreground">
-                        Identifying and defining the skills needed for organizational success.
-                      </p>
-                    </div>
-                    <div className="p-4 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <h5 className="font-semibold mb-2">Performance Appraisal Systems</h5>
-                      <p className="text-sm text-muted-foreground">
-                        Designing fair and effective performance evaluation frameworks.
-                      </p>
-                    </div>
-                    <div className="p-4 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <h5 className="font-semibold mb-2">Interviewing Skills Workshops</h5>
-                      <p className="text-sm text-muted-foreground">
-                        Training hiring managers to identify and select top talent.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </TabsContent>
-
-              <TabsContent value="cultural" className="space-y-6">
-                <div className="p-6 md:p-8 rounded-2xl border border-border bg-card">
-                  <div className="flex items-start gap-4 mb-6">
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                      <Heart className="h-6 w-6 text-primary" />
-                    </div>
-                    <div>
-                      <h4 className="text-xl font-bold mb-2">Cultural Interventions</h4>
-                      <p className="text-muted-foreground">
-                        Shaping the culture that drives engagement, performance, and retention.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <div className="p-4 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <h5 className="font-semibold mb-2">Leadership Alignment</h5>
-                      <p className="text-sm text-muted-foreground">
-                        Ensuring leadership teams are unified in vision and execution.
-                      </p>
-                    </div>
-                    <div className="p-4 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <h5 className="font-semibold mb-2">Employee Engagement Calendars</h5>
-                      <p className="text-sm text-muted-foreground">
-                        Strategic planning of initiatives that boost morale and connection.
-                      </p>
-                    </div>
-                    <div className="p-4 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <h5 className="font-semibold mb-2">Change Management</h5>
-                      <p className="text-sm text-muted-foreground">
-                        Guiding organizations through transitions with minimal disruption.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </TabsContent>
-            </Tabs>
+              </Tabs>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* Strategic Items */}
+              <div className="p-4 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                <h5 className="font-semibold mb-2">Vision-Mission-Value Drafting</h5>
+                <p className="text-sm text-muted-foreground">
+                  Crafting compelling organizational narratives that align teams and drive purpose.
+                </p>
+              </div>
+              <div className="p-4 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                <h5 className="font-semibold mb-2">Organization Diagnostics</h5>
+                <p className="text-sm text-muted-foreground">
+                  Comprehensive assessment of organizational health and improvement opportunities.
+                </p>
+              </div>
+              
+              {/* Talent Items */}
+              <div className="p-4 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                <h5 className="font-semibold mb-2">Competency Mapping</h5>
+                <p className="text-sm text-muted-foreground">
+                  Identifying and defining the skills needed for organizational success.
+                </p>
+              </div>
+              <div className="p-4 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                <h5 className="font-semibold mb-2">Performance Appraisal Systems</h5>
+                <p className="text-sm text-muted-foreground">
+                  Designing fair and effective performance evaluation frameworks.
+                </p>
+              </div>
+              <div className="p-4 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                <h5 className="font-semibold mb-2">Interviewing Skills Workshops</h5>
+                <p className="text-sm text-muted-foreground">
+                  Training hiring managers to identify and select top talent.
+                </p>
+              </div>
+              
+              {/* Cultural Items */}
+              <div className="p-4 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                <h5 className="font-semibold mb-2">Leadership Alignment</h5>
+                <p className="text-sm text-muted-foreground">
+                  Ensuring leadership teams are unified in vision and execution.
+                </p>
+              </div>
+              <div className="p-4 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                <h5 className="font-semibold mb-2">Employee Engagement Calendars</h5>
+                <p className="text-sm text-muted-foreground">
+                  Strategic planning of initiatives that boost morale and connection.
+                </p>
+              </div>
+              <div className="p-4 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                <h5 className="font-semibold mb-2">Change Management</h5>
+                <p className="text-sm text-muted-foreground">
+                  Guiding organizations through transitions with minimal disruption.
+                </p>
+              </div>
+            </div>
           </AnimatedSection>
         </div>
       </div>

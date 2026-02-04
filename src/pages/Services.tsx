@@ -2,7 +2,6 @@ import { Building2, Users, Heart, ArrowRight, Compass, Gauge, TrendingUp } from 
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const Services = () => {
   return (
@@ -47,7 +46,8 @@ const Services = () => {
               </div>
               <h3 className="text-xl font-bold mb-3">Foundation</h3>
               <p className="text-muted-foreground text-sm">
-                Establishing the fundamental building blocks of organizational excellence through vision, values, and strategic alignment.
+                To create a Robust Human Resource foundation which  
+will satisfy the requirements of the business.
               </p>
             </div>
 
@@ -69,7 +69,7 @@ const Services = () => {
               </div>
               <h3 className="text-xl font-bold mb-3">Gage</h3>
               <p className="text-muted-foreground text-sm">
-                Measuring and assessing organizational health, employee engagement, and performance metrics to identify opportunities.
+                A preemptive way to align the business growth.
               </p>
             </div>
 
@@ -91,7 +91,7 @@ const Services = () => {
               </div>
               <h3 className="text-xl font-bold mb-3">Traverse</h3>
               <p className="text-muted-foreground text-sm">
-                Navigating the journey of transformation with strategic interventions, change management, and sustainable growth.
+                Develop HR practices to drive the business to lead the Industry.
               </p>
             </div>
           </div>
@@ -108,23 +108,23 @@ const Services = () => {
             </p>
           </div>
 
-          <Tabs defaultValue="strategic" className="max-w-4xl mx-auto">
-            <TabsList className="grid w-full grid-cols-3 mb-8">
-              <TabsTrigger value="strategic" className="text-sm md:text-base">
+          <div className="max-w-4xl mx-auto space-y-6">
+            <div className="grid w-full grid-cols-3 mb-8">
+              <div className="text-sm md:text-base px-4 py-2 rounded-md font-medium text-muted-foreground inline-flex items-center justify-center cursor-default">
                 <Building2 className="h-4 w-4 mr-2 hidden sm:block" />
-                Strategic
-              </TabsTrigger>
-              <TabsTrigger value="talent" className="text-sm md:text-base">
+                Strategic 3
+              </div>
+              <div className="text-sm md:text-base px-4 py-2 rounded-md font-medium text-muted-foreground inline-flex items-center justify-center cursor-default">
                 <Users className="h-4 w-4 mr-2 hidden sm:block" />
                 Talent
-              </TabsTrigger>
-              <TabsTrigger value="cultural" className="text-sm md:text-base">
+              </div>
+              <div className="text-sm md:text-base px-4 py-2 rounded-md font-medium text-muted-foreground inline-flex items-center justify-center cursor-default">
                 <Heart className="h-4 w-4 mr-2 hidden sm:block" />
                 Cultural
-              </TabsTrigger>
-            </TabsList>
+              </div>
+            </div>
 
-            <TabsContent value="strategic" className="space-y-6">
+            <div className="space-y-6">
               <div className="p-6 md:p-8 rounded-2xl border border-border bg-card">
                 <div className="flex items-start gap-4 mb-6">
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
@@ -152,9 +152,9 @@ const Services = () => {
                   </div>
                 </div>
               </div>
-            </TabsContent>
+            </div>
 
-            <TabsContent value="talent" className="space-y-6">
+            <div className="space-y-6">
               <div className="p-6 md:p-8 rounded-2xl border border-border bg-card">
                 <div className="flex items-start gap-4 mb-6">
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
@@ -188,9 +188,9 @@ const Services = () => {
                   </div>
                 </div>
               </div>
-            </TabsContent>
+            </div>
 
-            <TabsContent value="cultural" className="space-y-6">
+            <div className="space-y-6">
               <div className="p-6 md:p-8 rounded-2xl border border-border bg-card">
                 <div className="flex items-start gap-4 mb-6">
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
@@ -224,8 +224,8 @@ const Services = () => {
                   </div>
                 </div>
               </div>
-            </TabsContent>
-          </Tabs>
+            </div>
+          </div>
         </div>
       </section>
 

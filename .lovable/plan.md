@@ -24,7 +24,7 @@ A modern, minimal, and responsive portfolio website showcasing 29+ years of HR &
 
 **Trust Markers Section**
 - Leadership Award 2021 badge/highlight
-- Client logos displayed in a clean horizontal row (Suzlon, Welspun, Mahatransco)
+- Client logos displayed in a clean horizontal row (Suzlon, Welspun, hranexi)
 - Smooth navigation to all other pages
 
 ---
@@ -40,7 +40,7 @@ A modern, minimal, and responsive portfolio website showcasing 29+ years of HR &
 - Visually distinct design treatment to make it memorable
 
 **Credentials & Skills**
-- Education: Master's Degree in Finance Management from Bharati Vidyapeeth
+- Education: Master's Degree in management science from Bharati Vidyapeeth
 - Core skills presented as elegant tags/cards: Business Partnership, Change Management, Industrial Relations, CXO-level Head Hunting
 
 ---

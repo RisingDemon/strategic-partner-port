@@ -82,7 +82,7 @@ const About = () => {
               <span className="absolute -bottom-8 -right-4 text-8xl text-primary/30 font-serif rotate-180">"</span>
             </blockquote>
             <p className="mt-12 text-background/70">
-              This philosophy drives my approach to organizational transformation—proactive, strategic, and always moving forward.
+              – Will Rogers
             </p>
           </div>
         </div>
@@ -102,12 +102,12 @@ const About = () => {
               </div>
               <div className="p-6 rounded-xl border border-border bg-card">
                 <h3 className="text-lg font-semibold mb-2">
-                  Master's Degree in Finance Management
+                  Master's Degree in management science
                 </h3>
-                <p className="text-primary font-medium mb-2">First Class Distinction</p>
+                {/* <p className="text-primary font-medium mb-2">First Class Distinction</p>
                 <p className="text-muted-foreground">
                   Bharati Vidyapeeth, Pune University
-                </p>
+                </p> */}
               </div>
             </div>
 

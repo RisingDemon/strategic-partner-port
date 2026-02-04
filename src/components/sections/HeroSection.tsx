@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import AnimatedSection from "@/components/AnimatedSection";
 import suzlonLogo from "@/assets/suzlon.webp";
 import welspunLogo from "@/assets/welspun.png";
-import mahatranscoLogo from "@/assets/mahatransco.png";
+import hranexiLogo from "@/assets/hranexi.jpg";
 
 const HeroSection = () => {
   const scrollToContact = () => {
@@ -105,7 +105,7 @@ const HeroSection = () => {
               </AnimatedSection>
               <AnimatedSection animation="fade-up" delay={300} className="opacity-80 hover:opacity-100 transition-all duration-300 hover:scale-105">
                 <div className="w-32 h-16 md:w-40 md:h-20 bg-white rounded-lg flex items-center justify-center p-3 border border-border shadow-sm">
-                  <img src={mahatranscoLogo} alt="Mahatransco" className="max-w-full max-h-full object-contain" />
+                  <img src={hranexiLogo} alt="hranexi" className="max-w-full max-h-full object-contain" />
                 </div>
               </AnimatedSection>
             </div>
@@ -126,7 +126,7 @@ const HeroSection = () => {
                   <p className="text-sm text-muted-foreground mt-1">Industries Served</p>
                 </div>
                 <div className="text-center group">
-                  <p className="text-3xl md:text-4xl font-bold text-primary group-hover:scale-110 transition-transform duration-300 inline-block">20+</p>
+                  <p className="text-3xl md:text-4xl font-bold text-primary group-hover:scale-110 transition-transform duration-300 inline-block">7+</p>
                   <p className="text-sm text-muted-foreground mt-1">Organizations</p>
                 </div>
               </div>

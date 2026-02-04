@@ -44,7 +44,7 @@ const SuccessStories = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold">Welspun BAPL (Sintex)</h3>
-                  <p className="text-sm text-muted-foreground">Infrastructure & Manufacturing</p>
+                  <p className="text-sm text-muted-foreground">Manufacturing</p>
                 </div>
               </div>
               <div className="space-y-4">
