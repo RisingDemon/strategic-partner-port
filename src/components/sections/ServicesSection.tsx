@@ -88,11 +88,27 @@ const ServicesSection = () => {
       {/* All Interventions Grid */}
       <div className="py-16 md:py-24 bg-muted/30">
         <div className="container">
-          <AnimatedSection animation="fade-up" className="text-center space-y-4 mb-12">
+          <AnimatedSection animation="fade-up" className="text-center space-y-4 mb-8">
             <h3 className="text-2xl md:text-3xl font-bold">Our Interventions</h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Specialized interventions tailored to your organization's unique needs
             </p>
+          </AnimatedSection>
+
+          {/* Category Labels */}
+          <AnimatedSection animation="fade-up" delay={100} className="flex flex-wrap justify-center gap-3 mb-12">
+            <div className="flex items-center gap-2 px-5 py-2.5 bg-muted rounded-md cursor-default">
+              <Target className="h-4 w-4 text-primary" />
+              <span className="font-medium">Strategic</span>
+            </div>
+            <div className="flex items-center gap-2 px-5 py-2.5 bg-muted rounded-md cursor-default">
+              <Users className="h-4 w-4 text-primary" />
+              <span className="font-medium">Talent</span>
+            </div>
+            <div className="flex items-center gap-2 px-5 py-2.5 bg-muted rounded-md cursor-default">
+              <Heart className="h-4 w-4 text-primary" />
+              <span className="font-medium">Cultural</span>
+            </div>
           </AnimatedSection>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
