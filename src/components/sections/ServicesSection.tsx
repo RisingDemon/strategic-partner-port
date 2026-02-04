@@ -1,7 +1,6 @@
-import { Building2, Users, Heart, ArrowRight, Compass, Gauge, TrendingUp } from "lucide-react";
+import { Building2, Users, Heart, ArrowRight, Compass, Gauge, TrendingUp, Target, BarChart3, MessageSquare, Handshake, Calendar, RefreshCw } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import AnimatedSection from "@/components/AnimatedSection";
 
 const ServicesSection = () => {
@@ -86,136 +85,108 @@ const ServicesSection = () => {
         </div>
       </div>
 
-      {/* Service Pillars */}
+      {/* All Interventions Grid */}
       <div className="py-16 md:py-24 bg-muted/30">
         <div className="container">
           <AnimatedSection animation="fade-up" className="text-center space-y-4 mb-12">
-            <h3 className="text-2xl md:text-3xl font-bold">Service Pillars</h3>
+            <h3 className="text-2xl md:text-3xl font-bold">Our Interventions</h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Specialized interventions tailored to your organization's unique needs
             </p>
           </AnimatedSection>
 
-          <AnimatedSection animation="zoom-in" delay={200}>
-            <Tabs defaultValue="strategic" className="max-w-4xl mx-auto">
-              <TabsList className="grid w-full grid-cols-3 mb-8">
-                <TabsTrigger value="strategic" className="text-sm md:text-base">
-                  <Building2 className="h-4 w-4 mr-2 hidden sm:block" />
-                  Strategic
-                </TabsTrigger>
-                <TabsTrigger value="talent" className="text-sm md:text-base">
-                  <Users className="h-4 w-4 mr-2 hidden sm:block" />
-                  Talent
-                </TabsTrigger>
-                <TabsTrigger value="cultural" className="text-sm md:text-base">
-                  <Heart className="h-4 w-4 mr-2 hidden sm:block" />
-                  Cultural
-                </TabsTrigger>
-              </TabsList>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            {/* Strategic Interventions */}
+            <AnimatedSection animation="fade-up" delay={100} className="p-6 rounded-2xl border border-border bg-card group hover:border-primary/50 hover:shadow-lg transition-all duration-500">
+              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <Target className="h-6 w-6 text-primary" />
+              </div>
+              <Badge variant="outline" className="mb-3 text-xs">Strategic</Badge>
+              <h4 className="font-semibold mb-2">Vision-Mission-Value Drafting</h4>
+              <p className="text-sm text-muted-foreground">
+                Crafting compelling organizational narratives that align teams and drive purpose.
+              </p>
+            </AnimatedSection>
 
-              <TabsContent value="strategic" className="space-y-6">
-                <div className="p-6 md:p-8 rounded-2xl border border-border bg-card">
-                  <div className="flex items-start gap-4 mb-6">
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                      <Building2 className="h-6 w-6 text-primary" />
-                    </div>
-                    <div>
-                      <h4 className="text-xl font-bold mb-2">Strategic Interventions</h4>
-                      <p className="text-muted-foreground">
-                        Building the foundation for organizational success through strategic planning and diagnostics.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    <div className="p-4 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <h5 className="font-semibold mb-2">Vision-Mission-Value Drafting</h5>
-                      <p className="text-sm text-muted-foreground">
-                        Crafting compelling organizational narratives that align teams and drive purpose.
-                      </p>
-                    </div>
-                    <div className="p-4 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <h5 className="font-semibold mb-2">Organization Diagnostics</h5>
-                      <p className="text-sm text-muted-foreground">
-                        Comprehensive assessment of organizational health and improvement opportunities.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </TabsContent>
+            <AnimatedSection animation="fade-up" delay={150} className="p-6 rounded-2xl border border-border bg-card group hover:border-primary/50 hover:shadow-lg transition-all duration-500">
+              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <Building2 className="h-6 w-6 text-primary" />
+              </div>
+              <Badge variant="outline" className="mb-3 text-xs">Strategic</Badge>
+              <h4 className="font-semibold mb-2">Organization Diagnostics</h4>
+              <p className="text-sm text-muted-foreground">
+                Comprehensive assessment of organizational health and improvement opportunities.
+              </p>
+            </AnimatedSection>
 
-              <TabsContent value="talent" className="space-y-6">
-                <div className="p-6 md:p-8 rounded-2xl border border-border bg-card">
-                  <div className="flex items-start gap-4 mb-6">
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                      <Users className="h-6 w-6 text-primary" />
-                    </div>
-                    <div>
-                      <h4 className="text-xl font-bold mb-2">Talent Interventions</h4>
-                      <p className="text-muted-foreground">
-                        Developing and optimizing your most valuable asset—your people.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <div className="p-4 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <h5 className="font-semibold mb-2">Competency Mapping</h5>
-                      <p className="text-sm text-muted-foreground">
-                        Identifying and defining the skills needed for organizational success.
-                      </p>
-                    </div>
-                    <div className="p-4 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <h5 className="font-semibold mb-2">Performance Appraisal Systems</h5>
-                      <p className="text-sm text-muted-foreground">
-                        Designing fair and effective performance evaluation frameworks.
-                      </p>
-                    </div>
-                    <div className="p-4 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <h5 className="font-semibold mb-2">Interviewing Skills Workshops</h5>
-                      <p className="text-sm text-muted-foreground">
-                        Training hiring managers to identify and select top talent.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </TabsContent>
+            {/* Talent Interventions */}
+            <AnimatedSection animation="fade-up" delay={200} className="p-6 rounded-2xl border border-border bg-card group hover:border-primary/50 hover:shadow-lg transition-all duration-500">
+              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <Users className="h-6 w-6 text-primary" />
+              </div>
+              <Badge variant="outline" className="mb-3 text-xs">Talent</Badge>
+              <h4 className="font-semibold mb-2">Competency Mapping</h4>
+              <p className="text-sm text-muted-foreground">
+                Identifying and defining the skills needed for organizational success.
+              </p>
+            </AnimatedSection>
 
-              <TabsContent value="cultural" className="space-y-6">
-                <div className="p-6 md:p-8 rounded-2xl border border-border bg-card">
-                  <div className="flex items-start gap-4 mb-6">
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                      <Heart className="h-6 w-6 text-primary" />
-                    </div>
-                    <div>
-                      <h4 className="text-xl font-bold mb-2">Cultural Interventions</h4>
-                      <p className="text-muted-foreground">
-                        Shaping the culture that drives engagement, performance, and retention.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <div className="p-4 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <h5 className="font-semibold mb-2">Leadership Alignment</h5>
-                      <p className="text-sm text-muted-foreground">
-                        Ensuring leadership teams are unified in vision and execution.
-                      </p>
-                    </div>
-                    <div className="p-4 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <h5 className="font-semibold mb-2">Employee Engagement Calendars</h5>
-                      <p className="text-sm text-muted-foreground">
-                        Strategic planning of initiatives that boost morale and connection.
-                      </p>
-                    </div>
-                    <div className="p-4 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <h5 className="font-semibold mb-2">Change Management</h5>
-                      <p className="text-sm text-muted-foreground">
-                        Guiding organizations through transitions with minimal disruption.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </TabsContent>
-            </Tabs>
-          </AnimatedSection>
+            <AnimatedSection animation="fade-up" delay={250} className="p-6 rounded-2xl border border-border bg-card group hover:border-primary/50 hover:shadow-lg transition-all duration-500">
+              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <BarChart3 className="h-6 w-6 text-primary" />
+              </div>
+              <Badge variant="outline" className="mb-3 text-xs">Talent</Badge>
+              <h4 className="font-semibold mb-2">Performance Appraisal Systems</h4>
+              <p className="text-sm text-muted-foreground">
+                Designing fair and effective performance evaluation frameworks.
+              </p>
+            </AnimatedSection>
+
+            <AnimatedSection animation="fade-up" delay={300} className="p-6 rounded-2xl border border-border bg-card group hover:border-primary/50 hover:shadow-lg transition-all duration-500">
+              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <MessageSquare className="h-6 w-6 text-primary" />
+              </div>
+              <Badge variant="outline" className="mb-3 text-xs">Talent</Badge>
+              <h4 className="font-semibold mb-2">Interviewing Skills Workshops</h4>
+              <p className="text-sm text-muted-foreground">
+                Training hiring managers to identify and select top talent.
+              </p>
+            </AnimatedSection>
+
+            {/* Cultural Interventions */}
+            <AnimatedSection animation="fade-up" delay={350} className="p-6 rounded-2xl border border-border bg-card group hover:border-primary/50 hover:shadow-lg transition-all duration-500">
+              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <Handshake className="h-6 w-6 text-primary" />
+              </div>
+              <Badge variant="outline" className="mb-3 text-xs">Cultural</Badge>
+              <h4 className="font-semibold mb-2">Leadership Alignment</h4>
+              <p className="text-sm text-muted-foreground">
+                Ensuring leadership teams are unified in vision and execution.
+              </p>
+            </AnimatedSection>
+
+            <AnimatedSection animation="fade-up" delay={400} className="p-6 rounded-2xl border border-border bg-card group hover:border-primary/50 hover:shadow-lg transition-all duration-500">
+              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <Calendar className="h-6 w-6 text-primary" />
+              </div>
+              <Badge variant="outline" className="mb-3 text-xs">Cultural</Badge>
+              <h4 className="font-semibold mb-2">Employee Engagement Calendars</h4>
+              <p className="text-sm text-muted-foreground">
+                Strategic planning of initiatives that boost morale and connection.
+              </p>
+            </AnimatedSection>
+
+            <AnimatedSection animation="fade-up" delay={450} className="p-6 rounded-2xl border border-border bg-card group hover:border-primary/50 hover:shadow-lg transition-all duration-500">
+              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <RefreshCw className="h-6 w-6 text-primary" />
+              </div>
+              <Badge variant="outline" className="mb-3 text-xs">Cultural</Badge>
+              <h4 className="font-semibold mb-2">Change Management</h4>
+              <p className="text-sm text-muted-foreground">
+                Guiding organizations through transitions with minimal disruption.
+              </p>
+            </AnimatedSection>
+          </div>
         </div>
       </div>
 
