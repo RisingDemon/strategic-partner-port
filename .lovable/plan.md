@@ -1,70 +1,55 @@
 
-
-# Update Key Skills Section with New Skill Items
+# Add Additional Companies to Corporate Achievements
 
 ## Overview
-Replace the current 4-skill grid with a new list of 7 skill areas, displayed as a clean vertical list with bullet points matching the user's format.
+Add 8 additional company mentions to the Corporate Achievements section. These will be simple name badges/pills without detailed descriptions, displayed after the existing Welspun and Suzlon cards.
 
 ---
 
-## Current State
-The Key Skills section shows 4 items in a 2-column grid with icons:
-- Business Partnership
-- Change Management  
-- Industrial Relations
-- CXO-level Head Hunting
+## Companies to Add
+**Pune-based:**
+- PARI
+- IAI Joinflex
+- ARaymonds
+- Carepack
 
-## New Skills to Display
-1. Business Partnership, Leadership alignment, talent - acquire, groom and retain
-2. Tools & Systems
-3. Organization Structure, Diagnostics, OD, Change Management & Culture
-4. Performance Driven culture
-5. Employee Engagement
-6. Job Analysis, Job Evaluation, Compensation & Benefits
-7. Legal compliance and Industrial Relations
+**Other locations:**
+- Mahatransco
+- MNGL
+- Taste'l
+- Shop your world
 
 ---
 
 ## Design Approach
 
-Since the new skills are longer text items (some quite lengthy), a simple bulleted list inside a single card will work better than individual boxes:
+Add a new subsection below the Welspun and Suzlon cards that displays these companies as simple badges/pills in a flex wrap layout:
 
 ```text
-+---------------------------------------+
-|  Key Skills                           |
-|                                       |
-|  • Business Partnership, Leadership   |
-|    alignment, talent - acquire,       |
-|    groom and retain                   |
-|                                       |
-|  • Tools & Systems                    |
-|                                       |
-|  • Organization Structure,            |
-|    Diagnostics, OD, Change            |
-|    Management & Culture               |
-|                                       |
-|  • Performance Driven culture         |
-|                                       |
-|  • Employee Engagement                |
-|                                       |
-|  • Job Analysis, Job Evaluation,      |
-|    Compensation & Benefits            |
-|                                       |
-|  • Legal compliance and Industrial    |
-|    Relations                          |
-+---------------------------------------+
+Corporate Achievements
+├── [Welspun Card - detailed]  [Suzlon Card - detailed]
+│
+└── Also worked with:
+    [PARI] [IAI Joinflex] [ARaymonds] [Carepack]
+    [Mahatransco] [MNGL] [Taste'l] [Shop your world]
 ```
+
+### Visual Style
+- Use Badge components or styled pills
+- Muted background with border
+- Centered, flex-wrap layout
+- Small icon (Building2) prefix for each or just clean text badges
+- Optional: Light hover effect
 
 ---
 
 ## Technical Details
 
-**File**: `src/components/sections/AboutSection.tsx`
+**File**: `src/pages/SuccessStories.tsx`
 
 **Changes**:
-1. Update the `skills` array to contain the 7 new skill strings
-2. Replace the 2-column grid layout with a single card containing a vertical list
-3. Style each item with a bullet point (using a small primary-colored dot or check icon)
-4. Maintain the existing header with Target icon
-5. Keep scroll animations for visual consistency
-
+1. Add a new `div` after the existing 2-column grid (after line 104)
+2. Include a subtle label like "Also partnered with" or just display badges directly
+3. Create 8 Badge components with company names
+4. Style with `flex flex-wrap gap-3 justify-center`
+5. Keep consistent with the existing design language
