@@ -1,26 +1,29 @@
 
+# Add Additional Companies to Corporate Achievements
 
-# Anand Shaligram Professional Portfolio
-
-A modern, minimal, and responsive portfolio website showcasing 29+ years of HR & IR expertise.
-
----
-
-## Design Foundation
-- **Style**: Clean, modern design with generous white space and subtle animations
-- **Colors**: Dark gray (#1A1A1A) paired with teal (#0D9488) accents on a light background
-- **Typography**: Professional, readable fonts with clear hierarchy
-- **Responsiveness**: Fully optimized for mobile, tablet, and desktop
+## Overview
+Add 8 additional company mentions to the Corporate Achievements section. These will be simple name badges/pills without detailed descriptions, displayed after the existing Welspun and Suzlon cards.
 
 ---
 
-## Page 1: Home - The Strategic Partner
+## Companies to Add
+**Pune-based:**
+- PARI
+- IAI Joinflex
+- ARaymonds
+- Carepack
 
-**Hero Section**
-- Bold headline: "Anand Shaligram: Aligning Human Capital with Business Strategy"
-- Professional sub-headline highlighting 29 years of expertise
-- The hook quote prominently displayed: "Transforming employee potential into substantive performance..."
-- Clear call-to-action button leading to contact
+**Other locations:**
+- Mahatransco
+- MNGL
+- Taste'l
+- Shop your world
+
+---
+
+## Design Approach
+
+Add a new subsection below the Welspun and Suzlon cards that displays these companies as simple badges/pills in a flex wrap layout:
 
 **Trust Markers Section**
 - Leadership Award 2021 badge/highlight
@@ -29,7 +32,7 @@ A modern, minimal, and responsive portfolio website showcasing 29+ years of HR &
 
 ---
 
-## Page 2: About - The Expert Narrative
+## Technical Details
 
 **Professional Summary**
 - Clean layout presenting the seasoned professional background
@@ -93,3 +96,9 @@ A modern, minimal, and responsive portfolio website showcasing 29+ years of HR &
 - Mobile-friendly hamburger menu for smaller screens
 - Footer with quick links and contact summary
 
+**Changes**:
+1. Add a new `div` after the existing 2-column grid (after line 104)
+2. Include a subtle label like "Also partnered with" or just display badges directly
+3. Create 8 Badge components with company names
+4. Style with `flex flex-wrap gap-3 justify-center`
+5. Keep consistent with the existing design language

@@ -102,6 +102,22 @@ const SuccessStories = () => {
               </div>
             </div>
           </div>
+
+          {/* Additional Companies */}
+          <div className="mt-10 text-center">
+            <p className="text-sm text-muted-foreground mb-4">Also partnered with</p>
+            <div className="flex flex-wrap gap-3 justify-center max-w-3xl mx-auto">
+              {["PARI", "IAI Joinflex", "ARaymonds", "Carepack", "Mahatransco", "MNGL", "Taste'l", "Shop your world"].map((company) => (
+                <Badge 
+                  key={company} 
+                  variant="secondary" 
+                  className="px-4 py-2 text-sm hover:bg-secondary/80 transition-colors"
+                >
+                  {company}
+                </Badge>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
