@@ -92,7 +92,7 @@ const AboutSection = () => {
       {/* Credentials */}
       <div className="py-16 md:py-24">
         <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Education */}
             <AnimatedSection animation="fade-up" className="space-y-6">
               <div className="flex items-center gap-3">
@@ -102,13 +102,9 @@ const AboutSection = () => {
                 <h3 className="text-2xl font-bold">Education</h3>
               </div>
               <div className="p-6 rounded-xl border border-border bg-card">
-                <h4 className="text-lg font-semibold mb-2">
+                <h4 className="text-lg font-semibold">
                   Master's Degree in Finance Management
                 </h4>
-                <p className="text-primary font-medium mb-2">First Class Distinction</p>
-                <p className="text-muted-foreground">
-                  Bharati Vidyapeeth, Pune University
-                </p>
               </div>
             </AnimatedSection>
 
@@ -121,7 +117,7 @@ const AboutSection = () => {
                 <h3 className="text-2xl font-bold">Key Skills</h3>
               </div>
               <div className="p-6 rounded-xl border border-border bg-card">
-                <ul className="space-y-4">
+                <ul className="space-y-3">
                   {skills.map((skill, index) => (
                     <AnimatedSection
                       key={skill}
