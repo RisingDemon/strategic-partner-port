@@ -1,4 +1,12 @@
-import { Building2, CheckCircle, ArrowRight, Search, FileCheck, Rocket, RefreshCw } from "lucide-react";
+import {
+  Building2,
+  CheckCircle,
+  ArrowRight,
+  Search,
+  FileCheck,
+  Rocket,
+  RefreshCw,
+} from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -14,12 +22,12 @@ const SuccessStoriesSection = () => {
               Success Stories
             </Badge>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-              Proven{" "}
-              <span className="text-primary">Impact</span>{" "}
-              Across Industries
+              Proven <span className="text-primary">Impact</span> Across
+              Industries
             </h1>
             <p className="text-lg text-muted-foreground">
-              Real results from strategic HR interventions that transformed organizations
+              Real results from strategic HR interventions that transformed
+              organizations
             </p>
           </div>
         </div>
@@ -29,7 +37,9 @@ const SuccessStoriesSection = () => {
       <section className="py-16 md:py-24">
         <div className="container">
           <div className="text-center space-y-4 mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold">Corporate Achievements</h2>
+            <h2 className="text-2xl md:text-3xl font-bold">
+              Corporate Achievements
+            </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Leadership roles that delivered measurable organizational impact
             </p>
@@ -44,7 +54,9 @@ const SuccessStoriesSection = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold">Welspun BAPL (Sintex)</h3>
-                  <p className="text-sm text-muted-foreground">Infrastructure & Manufacturing</p>
+                  <p className="text-sm text-muted-foreground">
+                    Infrastructure & Manufacturing
+                  </p>
                 </div>
               </div>
               <div className="space-y-4">
@@ -53,16 +65,29 @@ const SuccessStoriesSection = () => {
                   <div>
                     <p className="font-medium">M&A Due Diligence</p>
                     <p className="text-sm text-muted-foreground">
-                      Successfully led HR due diligence during merger & acquisition processes, ensuring smooth integration.
+                      Successfully led HR due diligence during merger &
+                      acquisition processes, ensuring smooth integration.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-medium">COVID-19 Manpower Rationalization</p>
+                    <p className="font-medium">
+                      COVID-19 Manpower Rationalization
+                    </p>
                     <p className="text-sm text-muted-foreground">
-                      Navigated workforce challenges during the pandemic while maintaining organizational stability and employee welfare.
+                      Navigated workforce challenges during the pandemic while
+                      maintaining organizational stability and employee welfare.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-medium">Policies & SOP's</p>
+                    <p className="text-sm text-muted-foreground">
+                      Implemented HR policies and uniform HR practices.
                     </p>
                   </div>
                 </div>
@@ -77,7 +102,9 @@ const SuccessStoriesSection = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold">Suzlon Energy</h3>
-                  <p className="text-sm text-muted-foreground">Renewable Energy</p>
+                  <p className="text-sm text-muted-foreground">
+                    Renewable Energy
+                  </p>
                 </div>
               </div>
               <div className="space-y-4">
@@ -86,7 +113,8 @@ const SuccessStoriesSection = () => {
                   <div>
                     <p className="font-medium">Revamped PMS</p>
                     <p className="text-sm text-muted-foreground">
-                      Redesigned Performance Management System for staff across India, improving clarity and fairness.
+                      Redesigned Performance Management System for staff across
+                      India, improving clarity and fairness.
                     </p>
                   </div>
                 </div>
@@ -95,8 +123,15 @@ const SuccessStoriesSection = () => {
                   <div>
                     <p className="font-medium">Large Workforce Management</p>
                     <p className="text-sm text-muted-foreground">
-                      Successfully managed HR operations for a workforce of 2,000+ employees across multiple locations.
+                      Successfully managed HR operations for a workforce of
+                      2,000+ employees across multiple locations.
                     </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-medium">HR, IR & Administration Function</p>
                   </div>
                 </div>
               </div>
@@ -105,12 +140,23 @@ const SuccessStoriesSection = () => {
 
           {/* Additional Companies */}
           <div className="mt-10 text-center">
-            <p className="text-sm text-muted-foreground mb-4">Also partnered with</p>
+            <p className="text-sm text-muted-foreground mb-4">
+              Also partnered with
+            </p>
             <div className="flex flex-wrap gap-3 justify-center max-w-3xl mx-auto">
-              {["PARI", "IAI Joinflex", "ARaymonds", "Carepack", "Mahatransco", "MNGL", "Taste'l", "Shop your world"].map((company) => (
-                <Badge 
-                  key={company} 
-                  variant="secondary" 
+              {[
+                "PARI",
+                "IAI Joinflex",
+                "ARaymonds",
+                "Carepack",
+                "Mahatransco",
+                "MNGL",
+                "Taste'l",
+                "Shop your world",
+              ].map((company) => (
+                <Badge
+                  key={company}
+                  variant="secondary"
                   className="px-4 py-2 text-sm hover:bg-secondary/80 transition-colors"
                 >
                   {company}
@@ -125,21 +171,26 @@ const SuccessStoriesSection = () => {
       <section className="py-16 md:py-24 bg-muted/30">
         <div className="container">
           <div className="text-center space-y-4 mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold">Recent Consulting Projects</h2>
+            <h2 className="text-2xl md:text-3xl font-bold">
+              Recent Consulting Projects
+            </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Strategic HR interventions for growing organizations
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
             <div className="p-6 rounded-xl border border-border bg-card hover:border-primary/50 transition-colors">
               <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                 <Building2 className="h-6 w-6 text-primary" />
               </div>
               <h3 className="font-semibold text-lg mb-2">Mahesh Patil & Co.</h3>
-              <Badge variant="secondary" className="mb-3">Infrastructure</Badge>
+              <Badge variant="secondary" className="mb-3">
+                Infrastructure
+              </Badge>
               <p className="text-sm text-muted-foreground">
-                Comprehensive HR strategy development and implementation for infrastructure growth.
+                Comprehensive HR strategy development and implementation for
+                infrastructure growth.
               </p>
             </div>
 
@@ -148,9 +199,12 @@ const SuccessStoriesSection = () => {
                 <Building2 className="h-6 w-6 text-primary" />
               </div>
               <h3 className="font-semibold text-lg mb-2">DBS Packaging</h3>
-              <Badge variant="secondary" className="mb-3">Manufacturing</Badge>
+              <Badge variant="secondary" className="mb-3">
+                Manufacturing
+              </Badge>
               <p className="text-sm text-muted-foreground">
-                Organizational restructuring and talent management system design.
+                Organizational restructuring and talent management system
+                design.
               </p>
             </div>
 
@@ -158,10 +212,28 @@ const SuccessStoriesSection = () => {
               <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                 <Building2 className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="font-semibold text-lg mb-2">Sumeet Trans Logistics</h3>
-              <Badge variant="secondary" className="mb-3">Logistics</Badge>
+              <h3 className="font-semibold text-lg mb-2">
+                Sumeet Trans Logistics
+              </h3>
+              <Badge variant="secondary" className="mb-3">
+                Logistics
+              </Badge>
               <p className="text-sm text-muted-foreground">
                 HR process optimization and workforce capability building.
+              </p>
+            </div>
+            <div className="p-6 rounded-xl border border-border bg-card hover:border-primary/50 transition-colors">
+              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                <Building2 className="h-6 w-6 text-primary" />
+              </div>
+              <h4 className="font-semibold text-lg mb-2">
+                Greenen Solutions Pvt Ltd.
+              </h4>
+              <Badge variant="secondary" className="mb-3">
+                Energy
+              </Badge>
+              <p className="text-sm text-muted-foreground">
+                Streamlining HR processes and building workforce competencies
               </p>
             </div>
           </div>
@@ -172,7 +244,9 @@ const SuccessStoriesSection = () => {
       <section className="py-16 md:py-24">
         <div className="container">
           <div className="text-center space-y-4 mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold">Engagement Methodology</h2>
+            <h2 className="text-2xl md:text-3xl font-bold">
+              Engagement Methodology
+            </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               A proven approach to delivering successful HR interventions
             </p>
@@ -190,7 +264,8 @@ const SuccessStoriesSection = () => {
                 </div>
                 <h3 className="font-bold text-lg mb-2">Understand & Explore</h3>
                 <p className="text-sm text-muted-foreground">
-                  Deep dive into organizational challenges, culture, and objectives
+                  Deep dive into organizational challenges, culture, and
+                  objectives
                 </p>
               </div>
 
@@ -201,7 +276,8 @@ const SuccessStoriesSection = () => {
                 </div>
                 <h3 className="font-bold text-lg mb-2">Agree & Decide</h3>
                 <p className="text-sm text-muted-foreground">
-                  Collaborative planning and alignment on intervention strategies
+                  Collaborative planning and alignment on intervention
+                  strategies
                 </p>
               </div>
 
@@ -223,7 +299,8 @@ const SuccessStoriesSection = () => {
                 </div>
                 <h3 className="font-bold text-lg mb-2">Review</h3>
                 <p className="text-sm text-muted-foreground">
-                  Continuous improvement through feedback and outcome measurement
+                  Continuous improvement through feedback and outcome
+                  measurement
                 </p>
               </div>
             </div>
@@ -239,7 +316,8 @@ const SuccessStoriesSection = () => {
               Your Success Story Starts Here
             </h2>
             <p className="text-background/70">
-              Join the organizations that have transformed their HR practices and achieved remarkable results.
+              Join the organizations that have transformed their HR practices
+              and achieved remarkable results.
             </p>
             <Button asChild size="lg" variant="secondary">
               <Link to="/contact">
