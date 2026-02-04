@@ -1,13 +1,16 @@
-import { GraduationCap, Briefcase, Target, Scale, Search } from "lucide-react";
+import { GraduationCap, Target } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import AnimatedSection from "@/components/AnimatedSection";
 import profilePic from "@/assets/profile_pic.jpg";
 
 const skills = [
-  { name: "Business Partnership", icon: Briefcase },
-  { name: "Change Management", icon: Target },
-  { name: "Industrial Relations", icon: Scale },
-  { name: "CXO-level Head Hunting", icon: Search },
+  "Business Partnership, Leadership alignment, talent - acquire, groom and retain",
+  "Tools & Systems",
+  "Organization Structure, Diagnostics, OD, Change Management & Culture",
+  "Performance Driven culture",
+  "Employee Engagement",
+  "Job Analysis, Job Evaluation, Compensation & Benefits",
+  "Legal compliance and Industrial Relations",
 ];
 
 const AboutSection = () => {
@@ -117,22 +120,20 @@ const AboutSection = () => {
                 </div>
                 <h3 className="text-2xl font-bold">Key Skills</h3>
               </div>
-              <div className="grid sm:grid-cols-2 gap-4">
-                {skills.map((skill, index) => (
-                  <AnimatedSection
-                    key={skill.name}
-                    animation="fade-up"
-                    delay={300 + index * 100}
-                    className="p-4 rounded-xl border border-border bg-card hover:border-primary/50 transition-colors"
-                  >
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                        <skill.icon className="h-5 w-5 text-primary" />
-                      </div>
-                      <span className="font-medium">{skill.name}</span>
-                    </div>
-                  </AnimatedSection>
-                ))}
+              <div className="p-6 rounded-xl border border-border bg-card">
+                <ul className="space-y-4">
+                  {skills.map((skill, index) => (
+                    <AnimatedSection
+                      key={skill}
+                      animation="fade-up"
+                      delay={300 + index * 50}
+                      className="flex items-start gap-3"
+                    >
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                      <span className="text-muted-foreground">{skill}</span>
+                    </AnimatedSection>
+                  ))}
+                </ul>
               </div>
             </AnimatedSection>
           </div>
