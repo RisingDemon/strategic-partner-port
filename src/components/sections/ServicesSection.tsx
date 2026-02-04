@@ -1,4 +1,4 @@
-import { Building2, Users, Heart, ArrowRight, Compass, Gauge, TrendingUp, Target, BarChart3, MessageSquare, Handshake, Calendar, RefreshCw } from "lucide-react";
+import { Building2, Users, Heart, ArrowRight, Compass, Gauge, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import AnimatedSection from "@/components/AnimatedSection";
@@ -85,11 +85,11 @@ const ServicesSection = () => {
         </div>
       </div>
 
-      {/* All Interventions Grid */}
+      {/* Service Pillars */}
       <div className="py-16 md:py-24 bg-muted/30">
         <div className="container">
-          <AnimatedSection animation="fade-up" className="text-center space-y-4 mb-8">
-            <h3 className="text-2xl md:text-3xl font-bold">Our Interventions</h3>
+          <AnimatedSection animation="fade-up" className="text-center space-y-4 mb-12">
+            <h3 className="text-2xl md:text-3xl font-bold">Service Pillars</h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Specialized interventions tailored to your organization's unique needs
             </p>
@@ -168,99 +168,6 @@ const ServicesSection = () => {
               </div>
             </div>
           </AnimatedSection>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            {/* Strategic Interventions */}
-            <AnimatedSection animation="fade-up" delay={100} className="p-6 rounded-2xl border border-border bg-card group hover:border-primary/50 hover:shadow-lg transition-all duration-500">
-              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                <Target className="h-6 w-6 text-primary" />
-              </div>
-              <Badge variant="outline" className="mb-3 text-xs">Strategic</Badge>
-              <h4 className="font-semibold mb-2">Vision-Mission-Value Drafting</h4>
-              <p className="text-sm text-muted-foreground">
-                Crafting compelling organizational narratives that align teams and drive purpose.
-              </p>
-            </AnimatedSection>
-
-            <AnimatedSection animation="fade-up" delay={150} className="p-6 rounded-2xl border border-border bg-card group hover:border-primary/50 hover:shadow-lg transition-all duration-500">
-              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                <Building2 className="h-6 w-6 text-primary" />
-              </div>
-              <Badge variant="outline" className="mb-3 text-xs">Strategic</Badge>
-              <h4 className="font-semibold mb-2">Organization Diagnostics</h4>
-              <p className="text-sm text-muted-foreground">
-                Comprehensive assessment of organizational health and improvement opportunities.
-              </p>
-            </AnimatedSection>
-
-            {/* Talent Interventions */}
-            <AnimatedSection animation="fade-up" delay={200} className="p-6 rounded-2xl border border-border bg-card group hover:border-primary/50 hover:shadow-lg transition-all duration-500">
-              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                <Users className="h-6 w-6 text-primary" />
-              </div>
-              <Badge variant="outline" className="mb-3 text-xs">Talent</Badge>
-              <h4 className="font-semibold mb-2">Competency Mapping</h4>
-              <p className="text-sm text-muted-foreground">
-                Identifying and defining the skills needed for organizational success.
-              </p>
-            </AnimatedSection>
-
-            <AnimatedSection animation="fade-up" delay={250} className="p-6 rounded-2xl border border-border bg-card group hover:border-primary/50 hover:shadow-lg transition-all duration-500">
-              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                <BarChart3 className="h-6 w-6 text-primary" />
-              </div>
-              <Badge variant="outline" className="mb-3 text-xs">Talent</Badge>
-              <h4 className="font-semibold mb-2">Performance Appraisal Systems</h4>
-              <p className="text-sm text-muted-foreground">
-                Designing fair and effective performance evaluation frameworks.
-              </p>
-            </AnimatedSection>
-
-            <AnimatedSection animation="fade-up" delay={300} className="p-6 rounded-2xl border border-border bg-card group hover:border-primary/50 hover:shadow-lg transition-all duration-500">
-              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                <MessageSquare className="h-6 w-6 text-primary" />
-              </div>
-              <Badge variant="outline" className="mb-3 text-xs">Talent</Badge>
-              <h4 className="font-semibold mb-2">Interviewing Skills Workshops</h4>
-              <p className="text-sm text-muted-foreground">
-                Training hiring managers to identify and select top talent.
-              </p>
-            </AnimatedSection>
-
-            {/* Cultural Interventions */}
-            <AnimatedSection animation="fade-up" delay={350} className="p-6 rounded-2xl border border-border bg-card group hover:border-primary/50 hover:shadow-lg transition-all duration-500">
-              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                <Handshake className="h-6 w-6 text-primary" />
-              </div>
-              <Badge variant="outline" className="mb-3 text-xs">Cultural</Badge>
-              <h4 className="font-semibold mb-2">Leadership Alignment</h4>
-              <p className="text-sm text-muted-foreground">
-                Ensuring leadership teams are unified in vision and execution.
-              </p>
-            </AnimatedSection>
-
-            <AnimatedSection animation="fade-up" delay={400} className="p-6 rounded-2xl border border-border bg-card group hover:border-primary/50 hover:shadow-lg transition-all duration-500">
-              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                <Calendar className="h-6 w-6 text-primary" />
-              </div>
-              <Badge variant="outline" className="mb-3 text-xs">Cultural</Badge>
-              <h4 className="font-semibold mb-2">Employee Engagement Calendars</h4>
-              <p className="text-sm text-muted-foreground">
-                Strategic planning of initiatives that boost morale and connection.
-              </p>
-            </AnimatedSection>
-
-            <AnimatedSection animation="fade-up" delay={450} className="p-6 rounded-2xl border border-border bg-card group hover:border-primary/50 hover:shadow-lg transition-all duration-500">
-              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                <RefreshCw className="h-6 w-6 text-primary" />
-              </div>
-              <Badge variant="outline" className="mb-3 text-xs">Cultural</Badge>
-              <h4 className="font-semibold mb-2">Change Management</h4>
-              <p className="text-sm text-muted-foreground">
-                Guiding organizations through transitions with minimal disruption.
-              </p>
-            </AnimatedSection>
-          </div>
         </div>
       </div>
 
