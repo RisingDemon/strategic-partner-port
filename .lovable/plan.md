@@ -57,14 +57,14 @@ Add a new subsection below the Welspun and Suzlon cards that displays these comp
 **Service Pillars** (presented as cards or tabs)
 1. **Strategic**: Vision-Mission-Value drafting, Organization Diagnostics
 2. **Talent**: Competency Mapping, Performance Appraisal Systems, Interviewing Skills Workshops
-3. **Cultural**: Leadership Alignment, Employee Engagement Calendars, Change Management
+3. **Cultural**: Leadership Alignment, Employee Engagement, Change Management
 
 ---
 
 ## Page 4: Success Stories - The "How"
 
 **Corporate Achievements**
-- **Welspun BAPL (Sintex)**: M&A due diligence, COVID-19 manpower rationalization
+- **Welspun BAPL (SINTEX)**: M&A due diligence, COVID-19 manpower rationalization
 - **Suzlon Energy**: Revamped PMS, managed 2,000+ workforce
 
 **Recent Consulting Projects**

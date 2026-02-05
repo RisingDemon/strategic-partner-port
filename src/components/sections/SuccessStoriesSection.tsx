@@ -53,9 +53,9 @@ const SuccessStoriesSection = () => {
                   <Building2 className="h-7 w-7 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold">Welspun BAPL (Sintex)</h3>
+                  <h3 className="text-xl font-bold">Welspun BAPL (SINTEX)</h3>
                   <p className="text-sm text-muted-foreground">
-                    Infrastructure & Manufacturing
+                    Manufacturing
                   </p>
                 </div>
               </div>
@@ -87,7 +87,7 @@ const SuccessStoriesSection = () => {
                   <div>
                     <p className="font-medium">Policies & SOP's</p>
                     <p className="text-sm text-muted-foreground">
-                      Implemented HR policies and uniform HR practices.
+                      Making & Implementation of HR policies and uniform HR practices
                     </p>
                   </div>
                 </div>

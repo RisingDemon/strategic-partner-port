@@ -211,7 +211,7 @@ will satisfy the requirements of the business.
                     </p>
                   </div>
                   <div className="p-4 rounded-lg bg-muted/50">
-                    <h4 className="font-semibold mb-2">Employee Engagement Calendars</h4>
+                    <h4 className="font-semibold mb-2">Employee Engagement</h4>
                     <p className="text-sm text-muted-foreground">
                       Strategic planning of initiatives that boost morale and connection.
                     </p>

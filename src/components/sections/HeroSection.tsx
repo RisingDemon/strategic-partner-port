@@ -188,7 +188,7 @@ const HeroSection = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Cultural</h3>
                 <p className="text-muted-foreground text-sm mb-4">
-                  Leadership Alignment, Employee Engagement Calendars, and Change Management.
+                  Leadership Alignment, Employee Engagement, and Change Management.
                 </p>
                 <button onClick={scrollToServices} className="text-primary text-sm font-medium hover:underline inline-flex items-center group/link">
                   Learn more <ArrowRight className="ml-1 h-4 w-4 group-hover/link:translate-x-1 transition-transform" />

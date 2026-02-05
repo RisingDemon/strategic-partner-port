@@ -43,7 +43,7 @@ const SuccessStories = () => {
                   <Building2 className="h-7 w-7 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold">Welspun BAPL (Sintex)</h3>
+                  <h3 className="text-xl font-bold">Welspun BAPL (SINTEX)</h3>
                   <p className="text-sm text-muted-foreground">Manufacturing</p>
                 </div>
               </div>
