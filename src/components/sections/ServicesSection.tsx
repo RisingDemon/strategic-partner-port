@@ -201,7 +201,7 @@ const ServicesSection = () => {
               </div>
               <div className="p-4 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
                 <h5 className="font-semibold mb-2">
-                  Employee Engagement
+                  Employee Engagement Initiatives
                 </h5>
                 <p className="text-sm text-muted-foreground">
                   Strategic planning of initiatives that boost morale and

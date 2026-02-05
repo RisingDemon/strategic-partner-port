@@ -84,7 +84,7 @@ Add a new subsection below the Welspun and Suzlon cards that displays these comp
 - Quote: "Look forward for the meeting to freeze the interventions and the timelines"
 
 **Contact Information Display**
-- Mobile: 98810 93405 (clickable to call)
+- Mobile: 91751 23329 (clickable to call)
 - Email: 27.anand@gmail.com (clickable to open email client)
 - Location: Pune, Maharashtra (with visual indicator)
 

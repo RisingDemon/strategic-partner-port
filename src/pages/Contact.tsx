@@ -41,14 +41,14 @@ const Contact = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* Phone */}
               <a
-                href="tel:+919881093405"
+                href="tel:+919175123329"
                 className="group p-8 rounded-2xl border border-border bg-card hover:border-primary/50 hover:shadow-lg transition-all duration-300 text-center"
               >
                 <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors">
                   <Phone className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Call Me</h3>
-                <p className="text-2xl font-bold text-primary mb-2">+91 98810 93405</p>
+                <p className="text-2xl font-bold text-primary mb-2">+91 91751 23329</p>
                 <p className="text-sm text-muted-foreground">
                   Available for calls during business hours
                 </p>
@@ -103,7 +103,7 @@ const Contact = () => {
                   </p>
                 </div>
                 <Button asChild size="lg" className="shrink-0">
-                  <a href="tel:+919881093405">
+                  <a href="tel:+919175123329">
                     <Phone className="mr-2 h-4 w-4" />
                     Call Now
                   </a>
