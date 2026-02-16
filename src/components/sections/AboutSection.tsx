@@ -4,13 +4,13 @@ import AnimatedSection from "@/components/AnimatedSection";
 import profilePic from "@/assets/profile_pic.jpg";
 
 const skills = [
-  "Business Partnership, Leadership alignment, talent - acquire, groom and retain",
+  "Business Partnership, Leadership Alignment, Talent - acquire, groom and retain",
   "Tools & Systems",
   "Organization Structure, Diagnostics, OD, Change Management & Culture",
-  "Performance Driven culture",
+  "Performance Driven Culture",
   "Employee Engagement",
   "Job Analysis, Job Evaluation, Compensation & Benefits",
-  "Legal compliance and Industrial Relations",
+  "Legal Compliance and Industrial Relations",
 ];
 
 const AboutSection = () => {

@@ -12,8 +12,11 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
 const SuccessStoriesSection = () => {
+  const scrollToContact = () => {
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
-    <div className="flex flex-col">
+    <div id= "success-stories" className="flex flex-col">
       {/* Hero Section */}
       <section className="py-16 md:py-24 bg-muted/30">
         <div className="container">
@@ -319,11 +322,9 @@ const SuccessStoriesSection = () => {
               Join the organizations that have transformed their HR practices
               and achieved remarkable results.
             </p>
-            <Button asChild size="lg" variant="secondary">
-              <Link to="/contact">
+            <Button size="lg" variant="secondary" onClick={scrollToContact}>
                 Start Your Transformation
                 <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
             </Button>
           </div>
         </div>

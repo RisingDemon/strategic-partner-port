@@ -5,6 +5,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 import suzlonLogo from "@/assets/suzlon.webp";
 import welspunLogo from "@/assets/welspun.png";
 import hranexiLogo from "@/assets/hranexi.jpg";
+import CountUp from '@/components/CountUp';
 
 const HeroSection = () => {
   const scrollToContact = () => {
@@ -114,19 +115,27 @@ const HeroSection = () => {
             <AnimatedSection animation="fade-up" delay={400}>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-12 border-t border-border mt-12">
                 <div className="text-center group">
-                  <p className="text-3xl md:text-4xl font-bold text-primary group-hover:scale-110 transition-transform duration-300 inline-block">29+</p>
+                  <p className="text-3xl md:text-4xl font-bold text-primary group-hover:scale-110 transition-transform duration-300 inline-block">
+                    <CountUp end={29} suffix="+" duration={1500} />
+                  </p>
                   <p className="text-sm text-muted-foreground mt-1">Years Experience</p>
                 </div>
                 <div className="text-center group">
-                  <p className="text-3xl md:text-4xl font-bold text-primary group-hover:scale-110 transition-transform duration-300 inline-block">2000+</p>
+                  <p className="text-3xl md:text-4xl font-bold text-primary group-hover:scale-110 transition-transform duration-300 inline-block">
+                    <CountUp end={2000} suffix="+" duration={1700} />
+                  </p>
                   <p className="text-sm text-muted-foreground mt-1">Workforce Managed</p>
                 </div>
                 <div className="text-center group">
-                  <p className="text-3xl md:text-4xl font-bold text-primary group-hover:scale-110 transition-transform duration-300 inline-block">15+</p>
+                  <p className="text-3xl md:text-4xl font-bold text-primary group-hover:scale-110 transition-transform duration-300 inline-block">
+                    <CountUp end={15} suffix="+" duration={1500} />
+                  </p>
                   <p className="text-sm text-muted-foreground mt-1">Industries Served</p>
                 </div>
                 <div className="text-center group">
-                  <p className="text-3xl md:text-4xl font-bold text-primary group-hover:scale-110 transition-transform duration-300 inline-block">7+</p>
+                  <p className="text-3xl md:text-4xl font-bold text-primary group-hover:scale-110 transition-transform duration-300 inline-block">
+                    <CountUp end={7} suffix="+" duration={1200} />
+                  </p>
                   <p className="text-sm text-muted-foreground mt-1">Organizations</p>
                 </div>
               </div>
